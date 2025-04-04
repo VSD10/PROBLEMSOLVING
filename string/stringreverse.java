@@ -3,14 +3,15 @@ class stringreverse {
         int len=s.length;
         int start=0;
         int end=len-1;
-        for(int i=0;i<len;i++)
+        for(int i=0;i<len/2;i++)
         {
             char t=s[start];
             s[start]=s[end];
             s[end]=t;
+            start++;
+            end--;
 
         }
-        
     }
     public static void main(String[] args) {
         stringreverse solution = new stringreverse();
