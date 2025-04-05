@@ -1,9 +1,19 @@
 package array;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * This class provides a method to find all unique triplets in an array that sum up to zero.
+ */
+
+    /**
+     * Finds all unique triplets in the given array that sum up to zero.
+     *
+     * @param nums the input array
+     * @return a list of lists, where each inner list represents a unique triplet
+     */
+  
 public class ThreeSum {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
