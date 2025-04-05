@@ -1,7 +1,5 @@
 package array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * The Threesumclosest class calculates the sum of three integers in an array that is closest to a target value.
