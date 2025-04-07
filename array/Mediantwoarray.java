@@ -2,7 +2,6 @@
  * The Mediantwoarray class calculates the median of two sorted arrays.
  */
 package array;
-import java.util.Arrays;
 
 class Mediantwoarray {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
