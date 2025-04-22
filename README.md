@@ -77,6 +77,12 @@ This repository contains my solutions to various algorithmic problems, organized
    - Uses two pointers moving at different speeds to determine if a cycle is present
    - Time Complexity: O(n)
 
+3. **Get Intersection Node** (`getIntersectionNode.java`)
+   - Finds the intersection node of two singly-linked lists
+   - Uses two pointers to traverse the lists and find the intersection point
+   - Time Complexity: O(n + m)
+
+
 ## Algorithmic Techniques Used
 - Sliding Window
 - Two Pointers

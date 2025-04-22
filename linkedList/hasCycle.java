@@ -23,7 +23,7 @@ class ListNode {
 }
 
 public class hasCycle {
-    public boolean hasCycle(ListNode head) {
+    public boolean hasCycle1(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;
         while (fast != null && fast.next != null) {
@@ -35,7 +35,7 @@ public class hasCycle {
     }
 
     public static void main(String[] args) {
-        // Sample data to test the hasCycle method
+        // Sample data to test the hasCycle1 method
         ListNode head = new ListNode(3);
         head.next = new ListNode(2);
         head.next.next = new ListNode(0);
@@ -43,7 +43,7 @@ public class hasCycle {
         head.next.next.next.next = head.next; // Creates a cycle
 
         hasCycle solution = new hasCycle();
-        boolean result = solution.hasCycle(head);
+        boolean result = solution.hasCycle1(head);
         System.out.println("Cycle detected: " + result); // Expected output: true
     }
 }

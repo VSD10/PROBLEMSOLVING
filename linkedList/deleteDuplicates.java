@@ -11,7 +11,7 @@ package linkedList;
          ListNode(int val, ListNode next) { this.val = val; this.next = next; }
      }
 public class deleteDuplicates {
-    public ListNode deleteDuplicates(ListNode head) {
+    public ListNode deleteDuplicates1(ListNode head) {
 
         ListNode cur=head;
         if(cur==null) return head;
@@ -32,7 +32,7 @@ public class deleteDuplicates {
     public static void main(String[] args) {
         ListNode head = new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3)))));
         deleteDuplicates obj = new deleteDuplicates();
-        ListNode result = obj.deleteDuplicates(head);
+        ListNode result = obj.deleteDuplicates1(head);
         while (result != null) {
             System.out.print(result.val + " ");
             result = result.next;
