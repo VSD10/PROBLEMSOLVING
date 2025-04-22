@@ -72,6 +72,11 @@ This repository contains my solutions to various algorithmic problems, organized
    - Iterates through the list and removes nodes with duplicate values
    - Time Complexity: O(n)
 
+2. **Has Cycle** (`hasCycle.java`)
+   - Detects if a cycle exists in a singly-linked list using Floyd's Cycle-Finding Algorithm
+   - Uses two pointers moving at different speeds to determine if a cycle is present
+   - Time Complexity: O(n)
+
 ## Algorithmic Techniques Used
 - Sliding Window
 - Two Pointers
