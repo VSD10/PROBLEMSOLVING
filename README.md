@@ -66,6 +66,12 @@ This repository contains my solutions to various algorithmic problems, organized
    - Uses binary search to efficiently search for a target value in a sorted 2D matrix
    - Time Complexity: O(log(m*n))
 
+## Linked List Problems
+1. **Delete Duplicates** (`deleteDuplicates.java`)
+   - Removes duplicates from a sorted linked list
+   - Iterates through the list and removes nodes with duplicate values
+   - Time Complexity: O(n)
+
 ## Algorithmic Techniques Used
 - Sliding Window
 - Two Pointers
