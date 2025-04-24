@@ -1,6 +1,12 @@
 # PROBLEM SOLVING
 
-This repository contains my solutions to various algorithmic problems, organized by data structure categories.
+This repository contains solutions to various algorithmic problems, organized by data structure categories. Each solution is implemented in Java and includes detailed comments explaining the approach.
+
+## Overview
+- **Purpose**: Practice and demonstrate problem-solving skills using various data structures and algorithms
+- **Language**: Java
+- **Organization**: Solutions are grouped by the primary data structure they utilize
+- **Documentation**: Each solution includes time complexity analysis and approach description
 
 ## String Problems
 1. **Longest Substring Without Repeating Characters** (`longestsusbtring.java`)
@@ -77,16 +83,39 @@ This repository contains my solutions to various algorithmic problems, organized
    - Uses two pointers moving at different speeds to determine if a cycle is present
    - Time Complexity: O(n)
 
-3. **Get Intersection Node** (`getIntersectionNode.java`)
+3. **Intersection of Two Linked Lists** (`intersectionoftwoll.java`)
    - Finds the intersection node of two singly-linked lists
    - Uses two pointers to traverse the lists and find the intersection point
    - Time Complexity: O(n + m)
 
+4. **Delete the Middle Node** (`deleteatmid.java`)
+   - Removes the middle node from a linked list
+   - Uses fast and slow pointer technique to find the middle node
+   - Time Complexity: O(n)
+
+5. **Remove Nth Node From End** (`Removenth.java`)
+   - Removes the nth node from the end of a linked list
+   - Uses two pointers with a gap of n nodes to find the target node
+   - Time Complexity: O(n)
+
+6. **Singly Linked List Implementation** (`sll.java`)
+   - Basic implementation of a singly linked list with insert and print operations
+   - Provides the foundation for other linked list problems
+   - Time Complexity: O(n) for insertion and printing
+
 
 ## Algorithmic Techniques Used
-- Sliding Window
-- Two Pointers
-- Binary Search
-- Sorting and Searching
-- Hash Tables
-- Array Manipulation
+- **Sliding Window**: Used for finding subarrays or substrings that satisfy certain conditions
+- **Two Pointers**: Efficient technique for processing arrays and linked lists
+- **Fast & Slow Pointers**: Special two-pointer technique for cycle detection and finding middle elements
+- **Binary Search**: Efficient searching in sorted arrays and matrices
+- **Sorting**: Pre-processing technique to simplify problem-solving
+- **Hash Tables**: For O(1) lookups and tracking frequencies or positions
+- **Array Manipulation**: In-place modifications and traversal techniques
+- **Linked List Manipulation**: Operations like insertion, deletion, and traversal
+
+## Time Complexity Analysis
+Each solution includes its time complexity analysis to demonstrate efficiency considerations. The implementations focus on optimizing for:
+- Time efficiency
+- Space efficiency
+- Edge case handling
