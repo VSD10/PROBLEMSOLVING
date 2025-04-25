@@ -99,7 +99,7 @@ This repository contains solutions to various algorithmic problems, organized by
    - Time Complexity: O(n)
 
 6. **Singly Linked List Implementation** (`sll.java`)
-   - Basic implementation of a singly linked list with insert and print operations
+   - Basic implementation of a singly linked list with insertion (FIRST, END ,MID), Deletion (FIRST,END,MID),Find the Middle Element, Length and print operations
    - Provides the foundation for other linked list problems
    - Time Complexity: O(n) for insertion and printing
 
