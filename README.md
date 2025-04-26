@@ -103,6 +103,13 @@ This repository contains solutions to various algorithmic problems, organized by
    - Provides the foundation for other linked list problems
    - Time Complexity: O(n) for insertion and printing
 
+7. **Doubly Linked List Implementation** (`Doublylinkedlist.java`)
+   - Complete implementation of a doubly linked list with bidirectional traversal
+   - Features insertion operations at the beginning, end, and at specific positions
+   - Maintains both head and tail pointers for efficient operations at both ends
+   - Includes methods for traversal in both forward and reverse directions
+   - Time Complexity: O(1) for insertions at beginning/end, O(n) for insertions at specific positions
+
 
 ## Algorithmic Techniques Used
 - **Sliding Window**: Used for finding subarrays or substrings that satisfy certain conditions
