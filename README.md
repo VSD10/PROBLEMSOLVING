@@ -106,9 +106,10 @@ This repository contains solutions to various algorithmic problems, organized by
 7. **Doubly Linked List Implementation** (`Doublylinkedlist.java`)
    - Complete implementation of a doubly linked list with bidirectional traversal
    - Features insertion operations at the beginning, end, and at specific positions
+   - Features deletion operations at the beginning, end, and at specific positions, also the entire list.
    - Maintains both head and tail pointers for efficient operations at both ends
    - Includes methods for traversal in both forward and reverse directions
-   - Time Complexity: O(1) for insertions at beginning/end, O(n) for insertions at specific positions
+   - Time Complexity: O(1) for insertions,deletion at beginning/end, O(n) for insertions,deletion at specific positions
 
 
 ## Algorithmic Techniques Used

@@ -75,18 +75,87 @@ class DoublyLinkedList {
     public void traverse() {
         Node f = head;
         Node r = tail;
+        if (f == null) {
+            System.out.println("List is empty.");
+            return;
+        }
         System.out.println("PRINTING IN FORWARD:");
         while (f != null) {
             System.out.print(f.data + " -> ");
             f = f.next;
         }
-        System.out.println("\nPRINTING IN REVERSE:");
-        while (r != null) {
-            System.out.print(r.data + " -> ");
-            r = r.prev;
-        }
+       // System.out.println("\nPRINTING IN REVERSE:");
+        //while (r != null) {
+          //  System.out.print(r.data + " -> ");
+            //r = r.prev;
+        //}
         System.out.println(); // To make output cleaner
     }
+
+    public void removeatfirst(){
+        if(head==null) {
+            System.out.println("List is empty, nothing to remove.");
+            return;
+        }
+        else{
+            head=head.next;
+            head.prev=null;
+            length--;
+            if(head==null) {
+                tail=null; // If the list is now empty, set tail to null as well
+            }
+
+        }
+          }
+
+          public void removeatlast()
+          {
+            if(head==null) return;
+            tail=tail.prev;
+            tail.next=null;
+            length--;
+
+          }
+
+          public void removeatpoint(int pos)
+          {
+            if (head==null) return;
+
+            else if(pos==1) {
+                removeatfirst();
+                return;
+            }
+
+            else if(pos==length)
+            {
+                removeatlast();
+                return;
+            }
+            else{
+                Node cur=head;;
+                int x=1;
+                while(x<pos-1)
+                {
+                    cur=cur.next;
+                    x++;
+                }
+                cur.next=cur.next.next;
+                cur.next.prev=cur;
+
+            }
+
+
+          }
+          public void removeall()
+          {
+            head=null;
+            tail=null;
+            length=0;
+          }
+          
+        
+
+
 
     // Main method to test
     public static void main(String[] args) {
@@ -98,9 +167,13 @@ class DoublyLinkedList {
         dll.insertAtFirst(6);
         dll.insertAtEnd(11);
 
-        dll.insertAtPoint(12, 7); // Insert 12 at position 7
-        dll.insertAtPoint(9, 4);  // Insert 9 at position 4
+        dll.insertAtPoint(12, 6); // Insert 12 at position 7
+        //dll.insertAtPoint(9, 4);  // Insert 9 at position 4
         System.out.println("\nLength is: " + dll.Length());
+        dll.traverse();
+        dll.removeall();
+        System.out.println("After removing all elements:");
+    
         dll.traverse();
     }
 }
