@@ -11,8 +11,7 @@
  */
 
 // Leetcode 160. Intersection of Two Linked Lists  
-    package linkedList;
-
+  
     class ListNode {
         int val;
         ListNode next;

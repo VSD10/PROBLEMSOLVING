@@ -1,4 +1,4 @@
-package linkedList;
+
 /**
  * This class provides a solution to detect a cycle in a singly-linked list.
  * 
