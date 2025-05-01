@@ -72,6 +72,12 @@ This repository contains solutions to various algorithmic problems, organized by
    - Uses binary search to efficiently search for a target value in a sorted 2D matrix
    - Time Complexity: O(log(m*n))
 
+## Two Pointer Problems
+1. **Happy Number** (`happynumber.java`)
+   - Determines if a number is "happy" using Floyd's Cycle-Finding Algorithm
+   - Uses fast and slow pointers to detect cycles in the sequence
+   - Time Complexity: O(log n)
+
 ## Linked List Problems
 1. **Delete Duplicates** (`deleteDuplicates.java`)
    - Removes duplicates from a sorted linked list
@@ -83,33 +89,56 @@ This repository contains solutions to various algorithmic problems, organized by
    - Uses two pointers moving at different speeds to determine if a cycle is present
    - Time Complexity: O(n)
 
-3. **Intersection of Two Linked Lists** (`intersectionoftwoll.java`)
+3. **Detect Cycle** (`detectcycle.java`)
+   - Not only detects if a cycle exists but also returns the node where the cycle begins
+   - Uses Floyd's Cycle-Finding Algorithm with two phases
+   - Time Complexity: O(n)
+
+4. **Intersection of Two Linked Lists** (`intersectionoftwoll.java`)
    - Finds the intersection node of two singly-linked lists
    - Uses two pointers to traverse the lists and find the intersection point
    - Time Complexity: O(n + m)
 
-4. **Delete the Middle Node** (`deleteatmid.java`)
+5. **Delete the Middle Node** (`deleteatmid.java`)
    - Removes the middle node from a linked list
    - Uses fast and slow pointer technique to find the middle node
    - Time Complexity: O(n)
 
-5. **Remove Nth Node From End** (`Removenth.java`)
+6. **Remove Nth Node From End** (`Removenth.java`)
    - Removes the nth node from the end of a linked list
    - Uses two pointers with a gap of n nodes to find the target node
    - Time Complexity: O(n)
 
-6. **Singly Linked List Implementation** (`sll.java`)
-   - Basic implementation of a singly linked list with insertion (FIRST, END ,MID), Deletion (FIRST,END,MID),Find the Middle Element, Length and print operations
+7. **Singly Linked List Implementation** (`sll.java` and `SinglyLinkedList.java`)
+   - Complete implementation of a singly linked list with insertion (FIRST, END, MID), deletion (FIRST, END, MID), finding the middle element, length calculation, and traversal operations
    - Provides the foundation for other linked list problems
+   - Interactive menu-driven implementation in `SinglyLinkedList.java`
    - Time Complexity: O(n) for insertion and printing
 
-7. **Doubly Linked List Implementation** (`Doublylinkedlist.java`)
+8. **Doubly Linked List Implementation** (`Doublylinkedlist.java`)
    - Complete implementation of a doubly linked list with bidirectional traversal
    - Features insertion operations at the beginning, end, and at specific positions
-   - Features deletion operations at the beginning, end, and at specific positions, also the entire list.
+   - Features deletion operations at the beginning, end, and at specific positions, also the entire list
    - Maintains both head and tail pointers for efficient operations at both ends
    - Includes methods for traversal in both forward and reverse directions
-   - Time Complexity: O(1) for insertions,deletion at beginning/end, O(n) for insertions,deletion at specific positions
+   - Time Complexity: O(1) for insertions, deletion at beginning/end, O(n) for insertions, deletion at specific positions
+
+9. **Reverse Linked List** (`Reverse.java`)
+   - Reverses an entire linked list in-place
+   - Uses iterative approach with three pointers (prev, current, next)
+   - Time Complexity: O(n)
+
+10. **Reverse Linked List Between Positions** (`ReverseBetweenDemo.java`)
+    - Reverses a portion of a linked list between specified positions (left to right)
+    - Uses iterative approach with pointer manipulation to reverse the sublist in-place
+    - Handles edge cases with a dummy node
+    - Time Complexity: O(n)
+
+11. **Sort Linked List** (`sort.java`)
+    - Sorts a linked list using merge sort algorithm
+    - Uses fast and slow pointers to find the middle of the list for splitting
+    - Recursively divides the list and merges sorted sublists
+    - Time Complexity: O(n log n)
 
 
 ## Algorithmic Techniques Used
@@ -121,6 +150,10 @@ This repository contains solutions to various algorithmic problems, organized by
 - **Hash Tables**: For O(1) lookups and tracking frequencies or positions
 - **Array Manipulation**: In-place modifications and traversal techniques
 - **Linked List Manipulation**: Operations like insertion, deletion, and traversal
+- **Merge Sort**: Divide and conquer algorithm for efficient sorting
+- **Floyd's Cycle-Finding Algorithm**: For detecting cycles in sequences or linked lists
+- **Recursion**: Self-referential problem-solving technique
+- **Dummy Node Technique**: For simplifying edge cases in linked list operations
 
 ## Time Complexity Analysis
 Each solution includes its time complexity analysis to demonstrate efficiency considerations. The implementations focus on optimizing for:
