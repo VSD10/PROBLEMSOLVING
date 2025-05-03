@@ -1,7 +1,12 @@
 
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int val) {
+        this.val = val;
+    }
+}
 public class REORDER {
-
-    // Your task: implement the logic inside this method
     public void reorderList(ListNode head) {
         if(head ==null || head.next==null) return ;
         ListNode slow=head,fast=head;
@@ -38,14 +43,7 @@ public class REORDER {
             second.next=t1;
             first=t1;
             second=t2;
-           
-           
-        }
-        
-
-
-        
-
+        }   
     }
 
     // Utility method to print list
@@ -74,13 +72,5 @@ public class REORDER {
 
         System.out.print("Reordered List: ");
         printList(head);
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int val) {
-        this.val = val;
     }
 }
