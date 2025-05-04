@@ -53,8 +53,6 @@ public class ReverseKnode {
 
             // Fix: reverse the current group and connect properly
             ListNode reversedHead = reverse(temp);
-            System.out.println(reversedHead.val); // Debugging line to check the reversed
-            System.out.println(temp.val);
             if (prev == null) {
                 head = reversedHead; // update head only once at the beginning
             } else {
