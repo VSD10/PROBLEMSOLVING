@@ -1,5 +1,4 @@
 
-package linkedList;
 public class Rotate {
     public static void main(String[] args) {
         // Sample input: 1 -> 2 -> 3 -> 4 -> 5, rotate by k=2

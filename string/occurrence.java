@@ -1,7 +1,7 @@
 public // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
 
-class Main {
+class occurrence {
     public static void main(String[] args) {
         String a = "aabbcccdddeeee";
         // Initialize an array to store character counts.
