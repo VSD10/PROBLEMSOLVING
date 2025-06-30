@@ -25,6 +25,16 @@ This repository contains solutions to various algorithmic problems, organized by
    - Reverses a character array in-place using two pointers
    - Time Complexity: O(n)
 
+5. **First and Last Occurrence** (`firstandlastocc.java`)
+   - Finds the first and last occurrence of each character in a string using HashMap
+   - Stores indices as arrays for efficient tracking
+   - Time Complexity: O(n)
+
+6. **Character Occurrence Count** (`occurrence.java`)
+   - Counts occurrences of each character in a string using array hashing
+   - Uses character offset technique for efficient counting
+   - Time Complexity: O(n)
+
 ## Array Problems
 1. **Contains Duplicate II** (`containsduplicate2.java`)
    - Checks if an array contains duplicates within a given distance k
@@ -62,6 +72,22 @@ This repository contains solutions to various algorithmic problems, organized by
    - Uses sorting and two pointers technique
    - Time Complexity: O(n²)
 
+## Binary Search Problems
+1. **Binary Search** (`binarysearch.java`)
+   - Classic binary search implementation to find a target element in a sorted array
+   - Uses left and right pointers to divide search space
+   - Time Complexity: O(log n)
+
+2. **Lower Bound** (`lowerbounnd.java`)
+   - Finds the first position where target can be inserted to maintain sorted order
+   - Returns index of first element >= target
+   - Time Complexity: O(log n)
+
+3. **Upper Bound** (`upperbound.java`)
+   - Finds the last position where target can be inserted to maintain sorted order
+   - Returns index of first element > target
+   - Time Complexity: O(log n)
+
 ## 2D Array Problems
 1. **Merge Intervals** (`mergeintervals.java`)
    - Merges overlapping intervals in a 2D array
@@ -71,6 +97,51 @@ This repository contains solutions to various algorithmic problems, organized by
 2. **Search in a 2D Matrix** (`SearchInArrayBS.java`)
    - Uses binary search to efficiently search for a target value in a sorted 2D matrix
    - Time Complexity: O(log(m*n))
+
+3. **Set Matrix Zeros** (`setmatrixzero.java`)
+   - Sets entire row and column to zero if any element in that row/column is zero
+   - Uses boolean arrays to mark rows and columns to be zeroed
+   - Time Complexity: O(m*n)
+
+4. **Matrix Boundary Traversal** (`boundaary.java`)
+   - Traverses and prints the boundary elements of a 2D matrix
+   - Time Complexity: O(m+n)
+
+5. **Diagonal and Anti-diagonal Sum** (`digandantidig.java`)
+   - Calculates sum of main diagonal and anti-diagonal elements
+   - Time Complexity: O(n)
+
+6. **Row and Column Sum** (`rcsum.java`)
+   - Calculates sum of each row and column in a matrix
+   - Time Complexity: O(m*n)
+
+7. **Matrix Addition** (`sumofmat.java`)
+   - Adds two matrices element by element
+   - Time Complexity: O(m*n)
+
+8. **Matrix Subtraction** (`suboftwomat.java`)
+   - Subtracts one matrix from another element by element
+   - Time Complexity: O(m*n)
+
+9. **Matrix Min/Max** (`minmax.java`)
+   - Finds minimum and maximum elements in a 2D matrix
+   - Time Complexity: O(m*n)
+
+10. **Matrix Sorting** (`sorting.java`)
+    - Sorts elements of a 2D matrix
+    - Time Complexity: O(m*n*log(m*n))
+
+11. **Symmetric Matrix Check** (`symmetric.java`)
+    - Checks if a matrix is symmetric (equal to its transpose)
+    - Time Complexity: O(n²)
+
+12. **Upper and Lower Triangular** (`utlt.java`)
+    - Separates matrix into upper and lower triangular parts
+    - Time Complexity: O(n²)
+
+13. **Zigzag Pattern Traversal** (`zigzagpattern.java`)
+    - Traverses matrix in zigzag pattern (alternating left-right and right-left)
+    - Time Complexity: O(m*n)
 
 ## Two Pointer Problems
 1. **Happy Number** (`happynumber.java`)
@@ -173,6 +244,58 @@ This repository contains solutions to various algorithmic problems, organized by
     - Reconnects the list to achieve the rotation effect
     - Time Complexity: O(n) where n is the length of the list
 
+17. **Merge Nodes Between Zeros** (`MergeNodes.java`)
+    - Merges nodes between zeros in a linked list by summing values between zero nodes
+    - Creates new nodes with the sum of values between consecutive zeros
+    - Handles linked lists that start and end with zero
+    - Time Complexity: O(n)
+
+18. **Reverse Nodes in k-Group** (`ReverseKnode.java`)
+    - Reverses nodes of a linked list k at a time
+    - If remaining nodes are less than k, they remain unchanged
+    - Uses helper functions to find kth node and reverse sublists
+    - Time Complexity: O(n)
+
+## Recursion and Backtracking Problems
+1. **Generate All Subsets** (`subset.java`)
+   - Generates all possible subsets of a given array using backtracking
+   - Handles duplicates by sorting and skipping duplicate elements
+   - Uses recursive approach with inclusion/exclusion decisions
+   - Time Complexity: O(2^n)
+
+2. **Combination Sum** (`Combinationsum.java`)
+   - Finds all unique combinations that sum to a target value
+   - Elements can be used multiple times
+   - Uses backtracking with recursive exploration
+   - Time Complexity: O(2^target)
+
+3. **Combination Sum II** (`CombinationsumII.java`)
+   - Finds all unique combinations that sum to a target value
+   - Each element can be used only once
+   - Handles duplicates in input array
+   - Time Complexity: O(2^n)
+
+4. **Combination Sum III** (`combinationsum3.java`)
+   - Finds all combinations of k numbers that sum to n
+   - Uses digits 1-9 only, each digit used at most once
+   - Uses backtracking with constraint checking
+   - Time Complexity: O(C(9,k))
+
+5. **Generate Parentheses** (`generateparen.java`)
+   - Generates all valid combinations of n pairs of parentheses
+   - Uses backtracking with balance tracking
+   - Ensures proper opening and closing of parentheses
+   - Time Complexity: O(4^n/√n) - Catalan number
+
+6. **Subset Sum Equal to Target** (`subequ.java` and `subequal.java`)
+   - Determines if there exists a subset with sum equal to target
+   - Uses dynamic programming and backtracking approaches
+   - Time Complexity: O(n*sum) for DP, O(2^n) for backtracking
+
+7. **Count Subsequences** (`subsequence_num.java`)
+   - Counts the number of subsequences that satisfy certain conditions
+   - Uses recursive approach with memoization
+   - Time Complexity: O(2^n)
 
 ## Algorithmic Techniques Used
 - **Sliding Window**: Used for finding subarrays or substrings that satisfy certain conditions
@@ -186,10 +309,37 @@ This repository contains solutions to various algorithmic problems, organized by
 - **Merge Sort**: Divide and conquer algorithm for efficient sorting
 - **Floyd's Cycle-Finding Algorithm**: For detecting cycles in sequences or linked lists
 - **Recursion**: Self-referential problem-solving technique
+- **Backtracking**: Systematic exploration of solution space with pruning
+- **Dynamic Programming**: Optimizing recursive solutions with memoization
+- **Matrix Traversal**: Various patterns for processing 2D arrays
 - **Dummy Node Technique**: For simplifying edge cases in linked list operations
+- **Character Hashing**: Array-based frequency counting for character problems
+- **Boundary Marking**: Technique for matrix problems to avoid modifying original data
+- **Modular Arithmetic**: For handling large numbers and rotations efficiently
+
+## Problem Categories Summary
+- **String Problems**: 6 problems covering substring operations, character counting, and string manipulation
+- **Array Problems**: 8 problems including duplicates detection, sum problems, and search algorithms
+- **Binary Search Problems**: 3 problems covering basic search, lower bound, and upper bound implementations
+- **2D Array/Matrix Problems**: 13 problems covering various matrix operations and traversal patterns
+- **Two Pointer Problems**: 1 problem demonstrating cycle detection techniques
+- **Linked List Problems**: 18 comprehensive problems covering all major linked list operations and algorithms
+- **Recursion and Backtracking Problems**: 7 problems exploring combinatorial algorithms and recursive solutions
+
+**Total Problems Solved: 56**
 
 ## Time Complexity Analysis
 Each solution includes its time complexity analysis to demonstrate efficiency considerations. The implementations focus on optimizing for:
 - Time efficiency
-- Space efficiency
+- Space efficiency  
 - Edge case handling
+- Clean, readable code structure
+- Comprehensive problem coverage from basic to advanced levels
+
+## Learning Outcomes
+This repository demonstrates proficiency in:
+- **Data Structure Manipulation**: Arrays, Strings, Linked Lists, Matrices
+- **Algorithm Design Patterns**: Two Pointers, Sliding Window, Binary Search, Backtracking
+- **Problem-Solving Approaches**: Iterative, Recursive, Dynamic Programming
+- **Optimization Techniques**: Space-time tradeoffs, Early termination, Constraint handling
+- **Code Quality**: Clean implementations, Edge case handling, Comprehensive testing
