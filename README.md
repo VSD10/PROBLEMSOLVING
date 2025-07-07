@@ -35,6 +35,16 @@ This repository contains solutions to various algorithmic problems, organized by
    - Uses character offset technique for efficient counting
    - Time Complexity: O(n)
 
+7. **String to Integer (ATOI)** (`ATOI.java`)
+   - Converts string to integer with proper handling of edge cases
+   - Handles whitespace, signs, and integer overflow/underflow
+   - Time Complexity: O(n)
+
+8. **Pangram Checker** (`Main.java`)
+   - Checks if a given string contains all letters from 'a' to 'z'
+   - Uses boolean array for efficient letter tracking
+   - Time Complexity: O(n)
+
 ## Array Problems
 1. **Contains Duplicate II** (`containsduplicate2.java`)
    - Checks if an array contains duplicates within a given distance k
@@ -71,6 +81,11 @@ This repository contains solutions to various algorithmic problems, organized by
    - Finds the sum of three integers in an array that is closest to a target value
    - Uses sorting and two pointers technique
    - Time Complexity: O(n²)
+
+9. **Subarray Sum Equals Zero** (`SubArrayzero.java`)
+   - Checks if there exists a subarray with sum equal to zero
+   - Uses prefix sum technique with HashSet to detect zero-sum subarrays
+   - Time Complexity: O(n)
 
 ## Binary Search Problems
 1. **Binary Search** (`binarysearch.java`)
@@ -142,6 +157,37 @@ This repository contains solutions to various algorithmic problems, organized by
 13. **Zigzag Pattern Traversal** (`zigzagpattern.java`)
     - Traverses matrix in zigzag pattern (alternating left-right and right-left)
     - Time Complexity: O(m*n)
+
+## Stack and Queue Problems
+1. **Stack Implementation** (`stack.java`)
+   - Array-based stack implementation with push, pop, top, and size operations
+   - Demonstrates basic stack operations with fixed-size array
+   - Time Complexity: O(1) for all operations
+
+2. **Queue Implementation** (`queue.java`)
+   - Array-based queue implementation with enqueue, dequeue, front, and rear operations
+   - Demonstrates basic queue operations with circular array approach
+   - Time Complexity: O(1) for all operations
+
+3. **Balanced Parentheses** (`balancedparen.java`)
+   - Checks if parentheses, brackets, and braces are balanced in a string
+   - Uses stack to match opening and closing brackets
+   - Time Complexity: O(n)
+
+4. **Infix to Postfix Conversion** (`infixtopostfix.java`)
+   - Converts infix expressions to postfix notation using stack
+   - Handles operator precedence and associativity
+   - Time Complexity: O(n)
+
+5. **Postfix to Infix Conversion** (`postfixtoinfix.java`)
+   - Converts postfix expressions back to infix notation using stack
+   - Reconstructs the original expression format
+   - Time Complexity: O(n)
+
+6. **Stack/Queue Utility** (`a.java`)
+   - Additional utility functions for stack and queue operations
+   - Provides helper methods for advanced stack/queue manipulations
+   - Time Complexity: Varies based on operation
 
 ## Two Pointer Problems
 1. **Happy Number** (`happynumber.java`)
@@ -297,6 +343,31 @@ This repository contains solutions to various algorithmic problems, organized by
    - Uses recursive approach with memoization
    - Time Complexity: O(2^n)
 
+8. **Phone Letter Combinations** (`phonelettercomb.java`)
+   - Generates all possible letter combinations from a phone number
+   - Uses backtracking to explore all possible combinations
+   - Time Complexity: O(4^n)
+
+9. **Letter Combinations of a Phone Number** (`lettercombination.java`)
+   - Maps digits to letters and generates all possible combinations
+   - Uses recursive approach with digit-to-letter mapping
+   - Time Complexity: O(4^n)
+
+10. **Palindrome Partitioning** (`PalindromePartitioning.java`)
+    - Partitions a string into palindromic substrings
+    - Uses backtracking with palindrome checking
+    - Time Complexity: O(2^n)
+
+11. **Test Recursion** (`test.java`)
+    - Test implementation for recursion problems
+    - Demonstrates basic recursive problem-solving patterns
+    - Time Complexity: Varies based on implementation
+
+12. **Pattern Printing** (`test.c`)
+    - C program for printing triangular patterns with letters
+    - Demonstrates nested loop patterns and character manipulation
+    - Time Complexity: O(n²)
+
 ## Algorithmic Techniques Used
 - **Sliding Window**: Used for finding subarrays or substrings that satisfy certain conditions
 - **Two Pointers**: Efficient technique for processing arrays and linked lists
@@ -316,17 +387,24 @@ This repository contains solutions to various algorithmic problems, organized by
 - **Character Hashing**: Array-based frequency counting for character problems
 - **Boundary Marking**: Technique for matrix problems to avoid modifying original data
 - **Modular Arithmetic**: For handling large numbers and rotations efficiently
+- **Stack Operations**: LIFO operations for expression evaluation and bracket matching
+- **Queue Operations**: FIFO operations for level-order processing and scheduling
+- **Prefix Sum**: Efficient technique for subarray sum problems
+- **String Parsing**: Handling edge cases in string-to-number conversion
+- **Pattern Matching**: Recursive and iterative approaches for pattern generation
+- **Cycle Detection**: Floyd's algorithm for detecting cycles in sequences
 
 ## Problem Categories Summary
-- **String Problems**: 6 problems covering substring operations, character counting, and string manipulation
-- **Array Problems**: 8 problems including duplicates detection, sum problems, and search algorithms
+- **String Problems**: 8 problems covering substring operations, character counting, string manipulation, and conversion
+- **Array Problems**: 9 problems including duplicates detection, sum problems, search algorithms, and subarray operations
 - **Binary Search Problems**: 3 problems covering basic search, lower bound, and upper bound implementations
 - **2D Array/Matrix Problems**: 13 problems covering various matrix operations and traversal patterns
+- **Stack and Queue Problems**: 6 problems covering basic data structure operations, expression conversion, and bracket matching
 - **Two Pointer Problems**: 1 problem demonstrating cycle detection techniques
 - **Linked List Problems**: 18 comprehensive problems covering all major linked list operations and algorithms
-- **Recursion and Backtracking Problems**: 7 problems exploring combinatorial algorithms and recursive solutions
+- **Recursion and Backtracking Problems**: 12 problems exploring combinatorial algorithms, pattern generation, and recursive solutions
 
-**Total Problems Solved: 56**
+**Total Problems Solved: 70**
 
 ## Time Complexity Analysis
 Each solution includes its time complexity analysis to demonstrate efficiency considerations. The implementations focus on optimizing for:

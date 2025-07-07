@@ -55,8 +55,8 @@ class infixToPostfix {
         stack.pop();
       } else // an operator is encountered
       {
+        
         while (!stack.isEmpty() && Prec(c) <= Prec(stack.peek())) {// While top of 'operator' has greater precedence example: if stack= '+' and c='*', then we pop '+' and push '*' in stack. 
-
           result += stack.pop();
         }
         stack.push(c);
