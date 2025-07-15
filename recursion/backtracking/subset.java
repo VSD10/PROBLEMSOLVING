@@ -21,7 +21,7 @@ public class subset {
         while(index+1<n && arr[index]==arr[index+1]) index++; 
         Subset(arr,n,index+1,ans,res);
 
-    }
+    } 
     static ArrayList<ArrayList<Integer>> ss(int[]arr,int n)
     {
         Arrays.sort(arr);
