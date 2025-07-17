@@ -5,7 +5,7 @@ public class Main {
     public static void main(String args[]) throws Exception {
         Scanner sc = new Scanner(System.in);
         ArrayList<Contact> contactList = new ArrayList<>();
-
+contactList.in
         System.out.println("Enter the number of contact-address pair:");
         int n = Integer.parseInt(sc.nextLine());
 

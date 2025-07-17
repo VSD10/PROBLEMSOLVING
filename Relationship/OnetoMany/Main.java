@@ -7,7 +7,7 @@ public class Main {
         ArrayList<EventType> eventTypeList = new ArrayList<>();
 
         System.out.println("Enter the type of events in CSV format");
-        String eventTypesCsv = sc.nextLine();
+        String eventTypesCsv = sc.nextLine();//"Academics,Auction"
         String[] eventTypesArray = eventTypesCsv.split(",");
         for (String type : eventTypesArray) {
             eventTypeList.add(new EventType(type.trim()));
@@ -18,16 +18,17 @@ public class Main {
 
         for (int i = 0; i < numberOfEvents; i++) {
             System.out.println("Enter the Event " + (i + 1) + " Details");
-            String eventDetailsCsv = sc.nextLine();
+            String eventDetailsCsv = sc.nextLine();// Book expo,Special sales,Academics,Mahesh
             String[] eventDetailsArray = eventDetailsCsv.split(",");
-            String name = eventDetailsArray[0].trim();
-            String detail = eventDetailsArray[1].trim();
-            String type = eventDetailsArray[2].trim();
-            String organiserName = eventDetailsArray[3].trim();
+            String name = eventDetailsArray[0].trim();//Book expo
+            String detail = eventDetailsArray[1].trim();//Special Sales
+            String type = eventDetailsArray[2].trim();//Academics
+            String organiserName = eventDetailsArray[3].trim();//Mahesh
 
             Event event = new Event(name, detail, type, organiserName);
 
-            for (EventType eventType : eventTypeList) {
+            for (EventType eventType : eventTypeList) //
+            {
                 if (eventType.getName().equalsIgnoreCase(type)) {
                     eventType.addEvent(event);
                     break;

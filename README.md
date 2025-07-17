@@ -367,6 +367,26 @@ This repository contains solutions to various algorithmic problems, organized by
     - C program for printing triangular patterns with letters
     - Demonstrates nested loop patterns and character manipulation
     - Time Complexity: O(n²)
+## Relationship Problems
+
+### One-to-Many Relationship
+1. **Event Management System** (`Main.java`, `Event.java`, `EventType.java`, `EventTypeBO.java`)
+   - Implements a one-to-many relationship between EventType and Event classes
+   - **EventType** can contain multiple Events in an ArrayList
+   - **Event** contains event details (name, detail, type, organiserName)
+   - **EventTypeBO** provides display functionality for formatted output
+   - **Main** class handles CSV input parsing and relationship establishment
+   - Demonstrates proper object-oriented design with encapsulation
+   - Time Complexity: O(n) for input processing, O(n*m) for display where n=event types, m=events per type
+
+### One-to-One Relationship  
+2. **Contact Management System** (`Main.java`, `Contact.java`, `Address.java`)
+   - Implements a one-to-one relationship between Contact and Address classes
+   - **Contact** has exactly one Address associated with it
+   - **Address** contains location details (street, city, state, zip)
+   - **Main** class handles input and demonstrates the relationship
+   - Shows proper encapsulation and association principles
+   - Time Complexity: O(1) for object creation and access
 
 ## Algorithmic Techniques Used
 - **Sliding Window**: Used for finding subarrays or substrings that satisfy certain conditions
@@ -403,8 +423,9 @@ This repository contains solutions to various algorithmic problems, organized by
 - **Two Pointer Problems**: 1 problem demonstrating cycle detection techniques
 - **Linked List Problems**: 18 comprehensive problems covering all major linked list operations and algorithms
 - **Recursion and Backtracking Problems**: 12 problems exploring combinatorial algorithms, pattern generation, and recursive solutions
+- **Relationship Problems**: 2 problems demonstrating object-oriented design patterns (one-to-many, one-to-one)
 
-**Total Problems Solved: 70**
+**Total Problems Solved: 72**
 
 ## Time Complexity Analysis
 Each solution includes its time complexity analysis to demonstrate efficiency considerations. The implementations focus on optimizing for:
@@ -419,6 +440,7 @@ This repository demonstrates proficiency in:
 - **Data Structure Manipulation**: Arrays, Strings, Linked Lists, Matrices
 - **Algorithm Design Patterns**: Two Pointers, Sliding Window, Binary Search, Backtracking
 - **Problem-Solving Approaches**: Iterative, Recursive, Dynamic Programming
+- **Object-Oriented Design**: Class relationships, Encapsulation, Association patterns
 - **Optimization Techniques**: Space-time tradeoffs, Early termination, Constraint handling
 - **Code Quality**: Clean implementations, Edge case handling, Comprehensive testing
 
@@ -432,5 +454,6 @@ This repository demonstrates proficiency in:
 - **Two Pointer Problems**: 1 problem demonstrating cycle detection techniques
 - **Linked List Problems**: 18 comprehensive problems covering all major linked list operations and algorithms
 - **Recursion and Backtracking Problems**: 12 problems exploring combinatorial algorithms, pattern generation, and recursive solutions
+- **Relationship Problems**: 2 problems demonstrating object-oriented design patterns (one-to-many, one-to-one)
 
-   **🎯 Total Problems Solved: 70** 🚀🎉
+   **🎯 Total Problems Solved: 72** 🚀🎉

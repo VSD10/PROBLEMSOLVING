@@ -15,6 +15,11 @@ class EventType {
         this.list = new ArrayList<>();
     }
 
+    public EventType(String name, ArrayList<Event> list) {
+        this.name = name;
+        this.list = list;
+    }
+
     public String getName() {
         return name;
     }

@@ -1,0 +1,48 @@
+problemUrl,topic,subTopic
+https://leetcode.com/problems/longest-substring-without-repeating-characters,String,Sliding Window
+https://leetcode.com/problems/string-to-integer-atoi,String,String Parsing
+https://leetcode.com/problems/valid-anagram,String,Character Count
+https://leetcode.com/problems/reverse-string,String,Two Pointers
+https://leetcode.com/problems/first-unique-character-in-a-string,String,HashMap
+https://leetcode.com/problems/check-if-the-sentence-is-pangram,String,Letter Presence
+https://leetcode.com/problems/contains-duplicate-ii,Array,HashMap Window
+https://leetcode.com/problems/contains-duplicate-iii,Array,HashMap + Value Diff
+https://leetcode.com/problems/maximum-average-subarray-i,Array,Sliding Window
+https://leetcode.com/problems/4sum,Array,Two Pointers
+https://leetcode.com/problems/median-of-two-sorted-arrays,Array,Binary Search Merge
+https://leetcode.com/problems/search-in-rotated-sorted-array,Array,Binary Search Variant
+https://leetcode.com/problems/3sum,Array,Two Pointers
+https://leetcode.com/problems/3sum-closest,Array,Two Pointers
+https://leetcode.com/problems/subarray-sum-equals-k,Array,Prefix Sum
+https://leetcode.com/problems/binary-search,Binary Search,Classic
+https://leetcode.com/problems/lower-bound,Binary Search,First Greater Or Equal
+https://leetcode.com/problems/upper-bound,Binary Search,First Greater
+https://leetcode.com/problems/merge-intervals,2D Array,Sorting
+https://leetcode.com/problems/search-a-2d-matrix,2D Array,Binary Search
+https://leetcode.com/problems/set-matrix-zeroes,2D Array,Flag Rows and Columns
+https://leetcode.com/problems/happy-number,Two Pointer,Floyd Cycle
+https://leetcode.com/problems/linked-list-cycle,Linked List,Cycle Detection
+https://leetcode.com/problems/linked-list-cycle-ii,Linked List,Find Start of Cycle
+https://leetcode.com/problems/remove-duplicates-from-sorted-list,Linked List,In-Place Deletion
+https://leetcode.com/problems/intersection-of-two-linked-lists,Linked List,Two Pointers Intersection
+https://leetcode.com/problems/remove-nth-node-from-end-of-list,Linked List,Two Pointers
+https://leetcode.com/problems/reverse-linked-list,Linked List,Iterative Reverse
+https://leetcode.com/problems/reverse-linked-list-ii,Linked List,Partial Reverse
+https://leetcode.com/problems/sort-list,Linked List,Merge Sort
+https://leetcode.com/problems/reorder-list,Linked List,Half Reverse Merge
+https://leetcode.com/problems/add-two-numbers,Linked List,Sum Digits
+https://leetcode.com/problems/rotate-list,Linked List,Rotation
+https://leetcode.com/problems/subsets,Recursion and Backtracking,Subset Generation
+https://leetcode.com/problems/combination-sum,Recursion and Backtracking,Reuse Elements
+https://leetcode.com/problems/combination-sum-ii,Recursion and Backtracking,Unique Elements
+https://leetcode.com/problems/combination-sum-iii,Recursion and Backtracking,Fixed Size Combinations
+https://leetcode.com/problems/generate-parentheses,Recursion and Backtracking,Balanced Generation
+https://leetcode.com/problems/subset-sum,Recursion and Backtracking,Subset Target
+https://leetcode.com/problems/letter-combinations-of-a-phone-number,Recursion and Backtracking,Digit to Letters
+https://leetcode.com/problems/palindrome-partitioning,Recursion and Backtracking,Partition
+https://leetcode.com/problems/implement-stack-using-arrays,Stack and Queue,Basic Stack
+https://leetcode.com/problems/implement-queue-using-arrays,Stack and Queue,Basic Queue
+https://leetcode.com/problems/valid-parentheses,Stack and Queue,Balanced Brackets
+https://leetcode.com/problems/evaluate-reverse-polish-notation,Stack and Queue,Postfix
+https://leetcode.com/problems/infix-to-postfix,Stack and Queue,Conversion
+https://leetcode.com/problems/postfix-to-infix,Stack and Queue,Conversion
